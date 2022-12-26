@@ -23,46 +23,11 @@ namespace data_grid_view_format_column
                 }
             };
         }
-
         BindingList<MyRow> Rows = new BindingList<MyRow>();
     }
-    class MyRow : INotifyPropertyChanged
+    class MyRow
     {
-        decimal _ValueA = 0;
-        public decimal ValueA
-        {
-            get => _ValueA;
-            set
-            {
-                if (!Equals(_ValueA, value))
-                {
-                    _ValueA = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
-
-        decimal _ValueB = 0;
-        public decimal ValueB
-        {
-            get => _ValueB;
-            set
-            {
-                if (!Equals(_ValueB, value))
-                {
-                    _ValueB = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
-
-
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
+        public decimal ValueA { get; set; }
+        public decimal ValueB { get; set; }
     }
 }
