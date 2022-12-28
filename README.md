@@ -1,4 +1,4 @@
-A DataGridView Column can be formatted using the Column.DefaultCellStyle.Format property (e.g. "F2"). The underlying data stays at full resolution. This can be observed by hovering over a cell to see the underlying value to (in this case) four places.
+A DataGridView Column can be formatted using the Column.DefaultCellStyle.Format property (e.g. "F2"). The underlying data stays at full resolution. This can be observed by hovering over a cell to see the underlying value (in this case to six places).
 
 ![cell-with-hover](https://github.com/IVSoftware/data-grid-view-format-column-00/blob/master/data-grid-view-format-column/Screenshots/cell-with-hover.png)
 
