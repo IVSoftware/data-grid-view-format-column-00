@@ -59,6 +59,7 @@
             this.Controls.Add(this.buttonCopy);
             this.Controls.Add(this.dataGridView);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Form";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);

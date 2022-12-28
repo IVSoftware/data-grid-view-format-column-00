@@ -50,8 +50,8 @@ namespace data_grid_view_format_column
                 rowBuilder.Add(string.Join("\t", columnBulder));
                 columnBulder.Clear();
             }
-            var csv = string.Join(Environment.NewLine, rowBuilder);
-            Clipboard.SetText(csv);
+            var tsv = string.Join(Environment.NewLine, rowBuilder);
+            Clipboard.SetText(tsv);
         }
         BindingList<MyRow> Rows = new BindingList<MyRow>();
     }
