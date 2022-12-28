@@ -29,24 +29,34 @@
         private void InitializeComponent()
         {
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.buttonCopy = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridView
             // 
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView.Name = "dataGridView1";
+            this.dataGridView.Name = "dataGridView";
             this.dataGridView.RowHeadersWidth = 62;
-            this.dataGridView.Size = new System.Drawing.Size(478, 244);
+            this.dataGridView.Size = new System.Drawing.Size(478, 245);
             this.dataGridView.TabIndex = 0;
+            // 
+            // buttonCopy
+            // 
+            this.buttonCopy.Location = new System.Drawing.Point(0, 251);
+            this.buttonCopy.Name = "buttonCopy";
+            this.buttonCopy.Size = new System.Drawing.Size(229, 34);
+            this.buttonCopy.TabIndex = 1;
+            this.buttonCopy.Text = "Copy (Control-C)";
+            this.buttonCopy.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(478, 244);
+            this.ClientSize = new System.Drawing.Size(478, 294);
+            this.Controls.Add(this.buttonCopy);
             this.Controls.Add(this.dataGridView);
             this.Name = "MainForm";
             this.Text = "Main Form";
@@ -58,5 +68,6 @@
         #endregion
 
         private DataGridView dataGridView;
+        private Button buttonCopy;
     }
 }

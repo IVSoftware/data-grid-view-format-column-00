@@ -41,7 +41,7 @@ namespace data_grid_view_format_column
                 rowBuilder = new List<string>(),
                 columnBulder = new List<string>();
 
-            for (int row = 0; row < Rows.Count; row++)
+            for (int row = 0; row < dataGridView.RowCount; row++)
             {
                 for (int col = 0; col < dataGridView.ColumnCount; col++)
                 {
