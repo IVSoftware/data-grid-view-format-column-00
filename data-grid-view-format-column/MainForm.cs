@@ -34,7 +34,6 @@ namespace data_grid_view_format_column
                 }
             };
         }
-
         private void copyAllToClipboard()
         {
             List<string>
@@ -54,7 +53,6 @@ namespace data_grid_view_format_column
             var csv = string.Join(Environment.NewLine, rowBuilder);
             Clipboard.SetText(csv);
         }
-
         BindingList<MyRow> Rows = new BindingList<MyRow>();
     }
     class MyRow
